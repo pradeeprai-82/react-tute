@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+        const myElement = (
+         <div>
+            <p>I am a paragraph.</p>
+            <p>I am a paragraph too.</p>
+        </div>
+        );
+        const sum = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(myElement);
+        
+    </script>
+
+    <div id="root"></div>
+    <script>
+        const myElement = React.createElement('h1', {}, 'I do not use JSX!');
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(myElement);
+    </script>
+
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+      function Hello() {
+        return <h1>Hello World!</h1>;
+      }
+
+      ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+    </script>
+    
+
+    
+
+
+    
+  </body>
+</html>
+
+
+
+
